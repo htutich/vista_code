@@ -1,0 +1,155 @@
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    background-color: #e8eff2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+button, input, select, textarea {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    position: relative;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 0.7vw;
+}
+.container .userinfo {
+    display: inline-block;
+    width: 39vw;
+    margin-right: 0.5vw;
+    vertical-align: top;
+    min-height: 30vw;
+}
+.container .userinfo .header {
+    background-color: #3398cc;
+    padding: 0.5vw 0.6vw;
+    color: white;
+    font-weight: 100;
+    font-family: system-ui;
+    font-size: 0.9vw;
+    height: 2.15vw;
+}
+.container .userinfo .mainblock {
+    border: 0.15vw solid #3398cc;
+    padding: 0.5vw;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.inputgroup {
+    position: relative;
+    display: block;
+    margin-bottom: 0.5vw;
+}
+.inputgroup .title {
+    display: inline-block;
+}
+.inputgroup input {
+    display: inline-block;
+    border: unset;
+    background-color: unset;
+    border-bottom: 0.1vw solid #e4e4e4;
+    font-size: 0.6vw;
+    padding: 0.2vw;
+}
+
+.container .userlist {
+    display: inline-block;
+    width: 39vw;
+    vertical-align: top;
+    min-height: 30vw;
+    position: relative;
+}
+.container .userlist .header {
+    background-color: #fafafa;
+    border: 0.15vw solid #d9d9d9;
+    border-bottom: 0.1vw solid #f1f1f1;
+    height: 2.15vw;
+    display: flex;
+}
+.container .userlist .header .routebtn {
+    font-family: system-ui;
+    font-size: 0.7vw;
+    text-transform: uppercase;
+    padding: 0.5vw 0.6vw;
+    display: block;
+    cursor: pointer;
+}
+.container .userlist .header .routebtn.active {
+    border-bottom: 0.15vw solid #3398cc;
+    color: #3398cc;
+}
+.container .userlist .header .routebtn:hover {
+    border-bottom: 0.15vw solid #3398cc;
+    color: #3398cc;
+}
+.container .userlist .mainblock {
+    border: 0.15vw solid #d9d9d9;
+    border-top: unset;
+    display: block;
+    height: 100%;
+    background-color: #ffffff;
+}
+.container .userlist .mainblock .datalist {
+    width: 100%;
+    border-collapse: collapse;
+}
+.container .userlist .mainblock .datalist thead td:first-child {
+    padding-left: 0.3vw;
+    width: 4vw;
+}
+.container .userlist .mainblock .datalist thead td:nth-child(3) {
+    width: 6vw;
+}
+.container .userlist .mainblock .datalist thead td {
+    font-family: system-ui;
+    font-size: 0.5vw;
+    color: #9f9f9f;
+    border-bottom: 0.1vw solid #f1f1f1;
+    padding: 0.3vw 0vw 0.3vw 0vw;
+    font-weight: 100;
+}
+.container .userlist .mainblock .datalist tbody td {
+    border-bottom: 0.1vw solid #f1f1f1;
+    padding: 0.3vw 0vw 0.3vw 0vw;
+}
+.container .userlist .mainblock .datalist tbody tr:hover td {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+.container .userlist .mainblock .datalist tbody tr:hover td:first-child {
+    border-left: 0.15vw solid #3398cc;
+    padding-left: 0.4vw;
+}
+.container .userlist .mainblock .datalist tbody td:first-child {
+    padding-left: 0.5vw;
+}
+
+.container .userlist .mainblock .datalist tbody tr.selected td:first-child {
+    border-left: 0.15vw solid #3398cc;
+    padding-left: 0.4vw;
+}
+.container .userlist .mainblock .datalist tbody tr.selected td {
+    background-color: #eeeeee;
+}
